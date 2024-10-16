@@ -1,12 +1,12 @@
-import { Button } from '@mui/material'
-import './App.css'
+import Board from './pages/Boards/_id'
+
 function App() {
   return (
     <>
-      <div>andiezdev</div>
-      <Button variant="contained">Hello world</Button>
+      {/* React Router Dom */}
+      <Board />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
