@@ -1,5 +1,8 @@
 import Box from '@mui/material/Box'
 import ModeSelect from '~/components/ModeSelect'
+import AppIcons from '@mui/icons-material/Apps'
+import { ReactComponent as TrelloIcon } from '~/assets/trello.svg'
+import SvgIcon from '@mui/material/SvgIcon'
 
 function AppBar() {
   return (
@@ -9,7 +12,13 @@ function AppBar() {
       display: 'flex',
       alignItems: 'center'
     }}>
-      <ModeSelect />
+      <Box>
+        <AppIcons />
+        <SvgIcon component={TrelloIcon} inheritViewBox />
+      </Box>
+      <Box>
+        <ModeSelect />
+      </Box>
     </Box>
   )
 }
